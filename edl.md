@@ -241,7 +241,7 @@ qc_diag.py cmd 290200
 
 # Force CPE to boot in FASTBOOT
 
-Use the commands to erase `boot` partition and make CPE boots into ***fastboot*** mode
+Use these ommands to erase `boot` partition and make CPE boots into ***fastboot*** mode
 
 ```
 edl e boot --memory=NAND --loader=/path/to/prog_firehose.mbn
