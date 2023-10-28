@@ -2,7 +2,7 @@
 
 Before starting, be sure you have [Bjoern Kerler's EDL tools](https://github.com/bkerler/edl) and sg3-utils already installed on your machine.
 
-Please use this [prog_firehose.mbn](/Loaders/prog_firehose.mbn) as loader to interact with the CPE.
+Please use this [prog_firehose.mbn](https://github.com/bkerler/Loaders/blob/a83850577f32faaf4694cda8f00666e0d9d34654/qualcomm/model_generic/sdx55/0000000000000000_d9357db88795b5a8_fhprg.bin) as loader to interact with the CPE.
 
 ⚠️ All commands must be run as ***root*** to avoid any issues with permissions ⚠️
 
@@ -247,15 +247,5 @@ qc_diag.py cmd 290200
 edl e boot --memory=NAND --loader=/path/to/prog_firehose.mbn
 edl reset --resetmode=reset --loader=/path/to/prog_firehose.mbn
 ```
-
-## Windows users can use these scripts (by device type) to erase boot partition
-
-[Erase Boot - For MC7010 units (mmWave, Plain, China, CA)](https://github.com/stich86/ZTE-MC7010/tree/main/RAW_Dump/erase_boot_7010)
-
-[Erase Boot - For MC7010D units](https://github.com/stich86/ZTE-MC7010/tree/main/RAW_Dump/erase_boot_7010d)
-
-These scripts will erase `boot` partition, write back **SBL1** and reset the CPE, so it will start in ***fastboot*** mode
-
-##
 
 As discussed in the [Partition Layout & Filesystem Information](fs.md) page, [erasing](edl.md#force-cpe-to-boot-in-fastboot) just the ***boot*** partition, so ***fastboot*** can be used to erase and write partitions and also to avoid rewriting **SBL1** each time, is preferred.
