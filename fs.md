@@ -132,4 +132,5 @@ fastboot flash system  mod_sdxprairie-sysfs.ubi
 ```
 
 When finished, boot the kernel with the command: `fastboot boot sdxprairie-boot.img`.
+
 If everything is fine, just reboot the unit and permanently flash the kernel with the command: `fastboot flash boot sdxprairie-boot.img` and then `fastboot boot sdxprairie-boot.img`.
