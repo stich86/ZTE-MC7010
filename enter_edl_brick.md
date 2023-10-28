@@ -7,14 +7,14 @@ When you got out the internal  part, in the below image, you can see the points 
 
 On some units, they may be slightly covered by the radiator:
 
-![image](https://github.com/stich86/ZTE-MC7010/assets/27808541/8bca2148-b760-4326-8d80-d2e310870187)
+<img src="asset/edl_point.jpg" alt="EDL Boot Point" width="300" height="auto">
 
-
+##
 Use a paperclip or tweezer to short these two points, keep them shorted and attach USB-C cable to the CPE.
 You should see into *Device Manager* (Windows) or `lsusb` (Linux) a device in ***EDL Mode***:
 - For Windows users, you will have this COM port:
-  
-<img width="469" alt="image" src="https://github.com/stich86/ZTE-MC7010/assets/27808541/9851c71d-72fd-4fea-928f-87aa16f38c5c">
+
+<img src="asset/edl_win_port.jpg" alt="Qualcomm EDL COM" width="300" height="auto">
 
 
 - For Linux users you will have this output:
