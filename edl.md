@@ -233,7 +233,7 @@ Reset the unit, making it boot back to normal mode, using this command:
 edl reset --resetmode=reset --loader=/path/to/prog_firehose.mbn
 ```
 
-In case the unit is stuck in DIAG mode (3 TTY), use this command to get it out:
+In case the unit is stuck in DIAG mode (3 TTY), use these commands to get it out:
 ```
 qc_diag.py cmd 4baa000000
 qc_diag.py cmd 290200
