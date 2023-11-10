@@ -1,6 +1,6 @@
 # Enter 'Emergency Download Mode' (EDL) if your unit is bricked
 
-In case of bricked unit (usually ZTE device with VID/PID *19d2:0079*), there is another way to enter the CPE into ***EDL Mode***.
+In case of bricked unit (usually ZTE device with VID/PID *19d2:0076*), there is another way to enter the CPE into ***EDL Mode***.
 
 Remove the two screws on the bottom of the CPE, slide down the internal part (using a spudger or a flat screw driver to leverage).
 When you got out the internal  part, in the below image, you can see the points for **EDL BOOT POINT** (red square). 
