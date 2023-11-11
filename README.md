@@ -18,7 +18,7 @@ The [MC7010](https://ztedevices.com/en-gl/mc70102/) CPE is a 4G/5G outdoor unit 
 - Other connectivity:
     - USB Type-C with CDROM+RNDIS emulation. It's also used for diagnostic and firmware flashing
     - BLE: Used with *"Installer Helper App"* ([Android](https://play.google.com/store/apps/details?id=com.zte.fwainstallwizard&hl=it&gl=US&pli=1)/[iOS](https://apps.apple.com/tr/app/install-helper/id1541447686)) to point the CPE when installed outside
-    - GPS: Some HW revs has also embedded GPS used by ISP to lock device connection on a specific position, it can be disabled. Doesn't seems to work on 7010D revs from my test
+    - GPS: Some HW revs has also embedded GPS used by ISP to lock device connection on a specific location, it can be disabled. Doesn't seems to work on 7010D revs from my test
 - Dock or Wall-Kit: based on the hardware version, you will have also a dock to use the unit inside
 
 # Useful Stuff
