@@ -14,6 +14,7 @@ Here is a list of links to the most common firmwares' LTE/NR CA Combos:
 | MC7010D  | H3G UK B09         | https://uecapability.smartphonecombo.it/view/?id=3f6fd35d-971a-4b79-be24-e8db5c0e5ebe |
 | MC7010D  | H3G UK B10         | https://uecapability.smartphonecombo.it/view/multi/?id=d3ae2171-b88c-46e4-b641-f6c4c47e3894 |
 | MC7010CA | TELUS B01          | https://uecapability.smartphonecombo.it/view/?id=c17826c9-29da-4c81-9074-6fb078f122e9 |
+| MC7010CA | ROGERS B03         | https://uecapability.smartphonecombo.it/view/multi/?id=39e1d206-2311-40fd-ac81-0560b04896e9 |
 
 ## NR5G
 | Device   | Firmware           | NR CAP                                                                               |
@@ -28,3 +29,6 @@ Here is a list of links to the most common firmwares' LTE/NR CA Combos:
 | MC7010D  | H3G UK B09         | https://uecapability.smartphonecombo.it/view/?id=7441f517-ef84-437e-9c10-2341ff61b6fc |
 | MC7010D  | H3G UK B10         | https://uecapability.smartphonecombo.it/view/multi/?id=3bb37aaf-e741-417d-80f7-1954c15c8d8a |
 | MC7010CA | TELUS B01          | https://uecapability.smartphonecombo.it/view/?id=34732bf3-ed5f-4caf-908e-75e6f8af00bd |
+| MC7010CA | ROGERS B03         | https://uecapability.smartphonecombo.it/view/multi/?id=728eb4e7-012e-443d-8dd0-9e1e8e5606a5 |
+
+Special thanks to @1alessandro1 for the combo extraction
