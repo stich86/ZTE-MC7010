@@ -22,4 +22,4 @@ You should see into *Device Manager* (Windows) or `lsusb` (Linux) a device in **
   Bus 004 Device 032: ID 05c6:9008 Qualcomm, Inc. Gobi Wireless Modem (QDL mode)
 ```
   
-Remove remove the paperclip/tweezer and use **QFIL** or **edl** to flash firmware back into CPE.
+Remove the paperclip/tweezer and use **QFIL** or **edl** to flash firmware back into CPE.
