@@ -28,6 +28,7 @@ The [MC7010](https://ztedevices.com/en-gl/mc70102/) CPE is a 4G/5G outdoor unit 
 - [LTE/NR5G CA Combos](cacombo.md)
 - [Play with EDL tools and partitions](edl.md)
 - [Enter 'Emergency Download Mode' (EDL) if your unit is bricked](enter_edl_brick.md)
+- [Fix broken IPA acceleration before repack](broken_ipa.md)
 
 ⚠️ Certain links in this repo will lead to other repositories which are not under my control.
 You accept that I have no control over and accepts no liability in respect of materials, products or services available externally of this repo. ⚠️
