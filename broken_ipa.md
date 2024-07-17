@@ -10,8 +10,10 @@ In the `/etc/data/ipa` directory, there is the stock Qualcomm configuration usin
 So before repacking the `rootfs`, be sure to change the ownership and permissions of this file using these commands:
 
 ```
-chown 1001:1001 /etc/data/ipa/IPACM_cfg.xml
+chown 1001:1001 PATHetc/data/ipa/IPACM_cfg.xml
 chmod 755 /etc/data/ipa/IPACM_cfg.xml
-```
 
-I want to give a big thanks to my friend @awvare who helped me find and fix this problem :)
+```
+Please note that **UID\GID 1001** are the user `radio` on the CPE
+
+I want to give a big thanks to my friend [@awvarez](https://github.com/avwarez) who helped me find and fix this problem :)
