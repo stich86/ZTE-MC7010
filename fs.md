@@ -85,13 +85,13 @@ The most important partitions that usually need to be swapped between different 
 | ***rootfs***      | Contains all Linux and ZTE executables, it can modified to add sshd/telnetd and other tools        |
 | ***zte_data***    | Contains EFS default configuration used after the device has been reset; web server pages; default AND custom parameters used by ZTE binaries, like admin password, IP, CPE mode and so on |
 
-These two volumes can be extracted using [ubireader](https://github.com/onekey-sec/ubi_reader), here is a little break down on how to extract and repack them:
+These two volumes can be extracted using [ubidump](https://github.com/nlitsme/ubidump) and [ubireader](https://github.com/onekey-sec/ubi_reader) tools, here is a little break down on how to extract and repack them:
 
 ⚠️ *Run all commands as **root** because there are some special files (like /dev directory) that need to be created* ⚠️
 
-- Install the *ubireader* tool (see the link above for a how-to guide)
-- Copy the **sdxprairie-sysfs.ubi** file into a directory, then run `ubireader_extract_files sdxprairie-sysfs.ubi`
-- This will create two folders, with path `ubifs-root/IMAGE_ID/{rootfs|ztedata}`
+- Install the *ubireader* and *ubidump* tools (see the link above for a how-to guide)
+- Copy the **sdxprairie-sysfs.ubi** file into a directory, then run `ubidump --savedir . --preserve sdxprairie-sysfs.ubi`
+- This will create two folders, with path `{rootfs|ztedata}`
 - Run `ubireader_display_info sdxprairie-sysfs.ubi | grep Sequence` again on **sdxprairie-sysfs.ubi** and take note of the big number after the string (called *ID_FROM_UBI_DISPLAY_INFO* from now on), this is to be used when ***UBI*** image is repacked. 
 - All modifications are to be done inside the {rootfs|ztedata} folders (like changing password hash, adding scripts, adding tools and so on)
 - Re-create the two ***UBIFS*** with these commands:
@@ -134,3 +134,7 @@ fastboot flash system  mod_sdxprairie-sysfs.ubi
 When finished, boot the kernel with the command: `fastboot boot sdxprairie-boot.img`.
 
 If everything is fine, just reboot the unit and permanently flash the kernel with the command: `fastboot flash boot sdxprairie-boot.img` and then `fastboot boot sdxprairie-boot.img`.
+
+# Important notes about update capabilities
+
+If you make any changes to the **rootfs** or **ztedata** folders, any **dFOTA** (Delta Firmware Over The Air) update from **ZTE** will fail. This is because, during the process, all data is binary patched. Before applying the patch, the system compares the CRC of the old file with the new one. If even a single file doesn't match, the update will stop and won't proceed. To preserve the update capability, you need to repack the firmware as it is, apply the updates, dump it again, and then repack the updated version with your modifications.
