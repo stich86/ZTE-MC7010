@@ -17,3 +17,6 @@ chmod 755 /etc/data/ipa/IPACM_cfg.xml
 Please note that **UID\GID 1001** are the user `radio` on the CPE
 
 I want to give a big thanks to my friend [@awvarez](https://github.com/avwarez) who helped me find and fix this problem :)
+
+## Update on 18/08/2024
+It seems that the ubireader tool, in some cases, doesn’t preserve file ownership (I encountered many issues when repacking a **ZTE MC888 Ultra/MC888A Ultra**). I recommend using the latest version of [nlitsme's ubidump](https://github.com/nlitsme/ubidump/) 
